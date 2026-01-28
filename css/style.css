@@ -1,0 +1,58 @@
+/* Header principal */
+.main-header {
+    background-color: #2c7be5;
+    padding: 1rem;
+}
+
+.main-header nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.main-header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 2rem;
+}
+
+/* Section statistiques */
+.stats {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Cartes statistiques */
+.card {
+    background-color: #f4f6f8;
+    padding: 1.5rem;
+    border-radius: 6px;
+    width: 150px;
+    text-align: center;
+}
+/* Page projets */
+.projects {
+    padding: 2rem;
+}
+
+/* Tableau */
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.projects-table th {
+    background-color: #f4f6f8;
+}

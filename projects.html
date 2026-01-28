@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Projets | TP Ticketing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- En-tête avec navigation principale -->
+    <header class="main-header">
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="projects.html">Projets</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="ticket-create.html">Créer un ticket</a>
+            <a href="index.html">Déconnexion</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal : liste des projets avec tableau des projets(2 exemples) -->
+    <main class="projects">
+
+        <h1>Liste des projets</h1>
+        <table class="projects-table">
+            <thead>
+                <tr>
+                    <th>Nom du projet</th>
+                    <th>Client</th>
+                    <th>Heures restantes</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Projet 1 -->   
+                <tr>
+                    <td>Site vitrine</td>
+                    <td>Client A</td>
+                    <td>12h</td>
+                    <td>
+                        <a href="tickets.html">Voir tickets</a>
+                    </td>
+                </tr>
+
+                <!-- Projet 2 -->
+                <tr>
+                    <td>Application interne</td>
+                    <td>Client B</td>
+                    <td>6h</td>
+                    <td>
+                        <a href="tickets.html">Voir tickets</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</body>
+</html>
