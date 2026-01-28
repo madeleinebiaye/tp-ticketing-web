@@ -56,3 +56,25 @@
 .projects-table th {
     background-color: #f4f6f8;
 }
+/* Page tickets */
+.tickets {
+    padding: 2rem;
+}
+
+/* Tableau des tickets */
+.tickets-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.tickets-table th,
+.tickets-table td {
+    border: 1px solid #ddd;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.tickets-table th {
+    background-color: #f4f6f8;
+}

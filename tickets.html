@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tickets | TP Ticketing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- En-tête avec navigation principale -->
+    <header class="main-header">
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="projects.html">Projets</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="ticket-create.html">Créer un ticket</a>
+            <a href="index.html">Déconnexion</a>
+        </nav>
+    </header>
+
+    <!-- Contenu principal : liste des tickets -->
+    <main class="tickets">
+
+        <h1>Liste des tickets</h1>
+        <table class="tickets-table">
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Projet</th>
+                    <th>Statut</th>
+                    <th>Type</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Ticket 1 -->
+                <tr>
+                    <td>Bug formulaire</td>
+                    <td>Site vitrine</td>
+                    <td>En cours</td>
+                    <td>Inclus</td>
+                    <td>
+                        <a href="ticket-detail.html">Voir détail</a>
+                    </td>
+                </tr>
+
+                <!-- Ticket 2 -->
+                <tr>
+                    <td>Ajout page contact</td>
+                    <td>Site vitrine</td>
+                    <td>À valider</td>
+                    <td>Facturable</td>
+                    <td>
+                        <a href="ticket-detail.html">Voir détail</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </main>
+
+</body>
+</html>
