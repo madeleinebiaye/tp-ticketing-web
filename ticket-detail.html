@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Détail du ticket | TP Ticketing</title>
+
+    <!-- Feuille de style principale -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- En-tête avec navigation principale -->
+    <header class="main-header" style="position: fixed; top: 0; left: 0; right: 0; background-color: #2c7be5; z-index: 1000;">
+    <div class="header-content">
+        <!-- Logo -->
+        <div class="logo">
+    <a href="index.html">
+        <img src="assets/logo.png" alt="Logo">
+    </a>
+</div>
+
+        <!-- Menu -->
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="projects.html">Projets</a>
+            <a href="tickets.html">Tickets</a>
+            <a href="ticket-create.html">Créer un ticket</a>
+            <a href="index.html">Déconnexion</a>
+        </nav>
+    </div>
+</header>
+    <!-- Contenu principal : détail d’un ticket -->
+    <main class="ticket-detail">
+
+        <h1>Détail du ticket</h1>
+
+        <!-- Informations générales -->
+        <section class="ticket-info">
+            <p><strong>Titre :</strong> Bug formulaire</p>
+            <p><strong>Projet :</strong> Site vitrine</p>
+            <p><strong>Statut :</strong> En cours</p>
+            <p><strong>Type :</strong> Inclus</p>
+            <p><strong>Priorité :</strong> Moyenne</p>
+        </section>
+
+        <!-- Description du ticket -->
+        <section class="ticket-description">
+            <h2>Description</h2>
+            <p>
+                Le formulaire de contact ne s’envoie pas lorsque
+                l’utilisateur clique sur le bouton.
+            </p>
+        </section>
+
+        <!-- Temps passé sur le ticket -->
+        <section class="ticket-time">
+            <h2>Temps passé</h2>
+            <p>Total : 2h30</p>
+        </section>
+
+    </main>
+
+</body>
+</html>

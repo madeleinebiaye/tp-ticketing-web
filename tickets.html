@@ -9,7 +9,16 @@
 <body>
 
     <!-- En-tête avec navigation principale -->
-    <header class="main-header">
+<header class="main-header" style="position: fixed; top: 0; left: 0; right: 0; background-color: #2c7be5; z-index: 1000;">
+    <div class="header-content">
+        <!-- Logo -->
+       <div class="logo">
+    <a href="index.html">
+        <img src="assets/logo.png" alt="Logo">
+    </a>
+</div>
+
+        <!-- Menu -->
         <nav>
             <a href="dashboard.html">Dashboard</a>
             <a href="projects.html">Projets</a>
@@ -17,7 +26,8 @@
             <a href="ticket-create.html">Créer un ticket</a>
             <a href="index.html">Déconnexion</a>
         </nav>
-    </header>
+    </div>
+</header>
 
     <!-- Contenu principal : liste des tickets -->
     <main class="tickets">

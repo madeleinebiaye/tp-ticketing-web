@@ -4,31 +4,74 @@
     padding: 0;
     font-family: Arial, sans-serif;
 }
+/* =========================
+   PAGE LOGIN (ISOLEE)
+========================= */
 
-index.body {
-    background-color: #f4f6f8;
-    height: 100vh;
+body.login-page {
+    background-color: #eaf2ff;
+    min-height: 100vh;
+}
+
+/* Header pleine largeur */
+.login-page .main-header {
+    width: 100%;
+    background-color: #2c7be5;
+}
+
+/* Contenu du header bien aligné */
+.login-page .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
-.login-container {
-    background-color: white;
-    padding: 2rem;
-    width: 100%;
-    max-width: 400px;
-    border-radius: 6px;
+/* Zone centrale du login */
+.login-page .login-container {
+    max-width: 420px;
+    margin: 5rem auto 0;
+    background-color: rgb(64, 105, 219);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
 }
+
+/* Titre centré */
+.login-page .login-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* Bouton plus élégant */
+.login-page button {
+    border-radius: 10px;
+}
+
+/* Header avec logo + menu */
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+    object-fit: contain
+}
+
+
+
+
 
 .login-container h1 {
     text-align: center;
     margin-bottom: 1.5rem;
 }
 
-.form-group {
-    margin-bottom: 1rem;
-}
+
 
 label {
     display: block;
@@ -40,18 +83,7 @@ input {
     padding: 0.5rem;
 }
 
-button {
-    width: 100%;
-    padding: 0.7rem;
-    background-color: #2c7be5;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #1a68d1;
-}
 
 /* Header principal */
 .main-header {
@@ -168,6 +200,7 @@ button:hover {
 ========================= */
 
 .ticket-form {
+    width: 50%;
     max-width: 600px;
     background-color: #ffffff;
     padding: 2rem;
@@ -245,11 +278,12 @@ button:hover {
 
 /* Colonne droite : info */
 .ticket-info-box {
-    max-width: 350px;
-    background-color: #f4f6f8;
-    padding: 1.5rem;
+    width: 50%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 2rem;
     border-radius: 10px;
-}
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 
 /* Image */
 .ticket-info-box img {
