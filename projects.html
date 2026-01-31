@@ -9,7 +9,7 @@
 <body>
 
     <!-- En-tête avec navigation principale -->
-   <header class="main-header" style="position: fixed; top: 0; left: 0; right: 0; background-color: #2c7be5; z-index: 1000;">
+   <header class="main-header"style="position: fixed; top: 0; left: 0; right: 0; background-color: #2c7be5; z-index: 1000;">
     <div class="header-content">
         <!-- Logo -->
       <div class="logo">
@@ -28,43 +28,169 @@
     </div>
 </header>
     <!-- Contenu principal : liste des projets avec tableau des projets(2 exemples) -->
-    <main class="projects">
+   <main class="projects" style="margin-top: 100px;">
 
-        <h1>Liste des projets</h1>
-        <table class="projects-table">
-            <thead>
-                <tr>
-                    <th>Nom du projet</th>
-                    <th>Client</th>
-                    <th>Heures restantes</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
+    <h1 class="page-title">Projets clients</h1>
+    <p class="page-subtitle">
+        Vue d’ensemble des projets, des clients associés et de l’état des contrats.
+    </p>
 
-            <tbody>
-                <!-- Projet 1 -->   
-                <tr>
-                    <td>Site vitrine</td>
-                    <td>Client A</td>
-                    <td>12h</td>
-                    <td>
-                        <a href="tickets.html">Voir tickets</a>
-                    </td>
-                </tr>
+    <section class="projects-grid">
 
-                <!-- Projet 2 -->
-                <tr>
-                    <td>Application interne</td>
-                    <td>Client B</td>
-                    <td>6h</td>
-                    <td>
-                        <a href="tickets.html">Voir tickets</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <!-- Projet 1 -->
+        <div class="project-card">
 
-    </main>
+            <div class="project-header">
+                <h2>Site vitrine</h2>
+                <span class="badge active">Actif</span>
+            </div>
+
+            <p class="project-client">Client : <strong>Client A</strong></p>
+
+            <p class="project-collab">
+                Collaborateurs : Alice, Bob
+            </p>
+
+            <div class="hours">
+                <span>Heures restantes : 12h</span>
+                <div class="progress">
+                    <div class="progress-fill" style="width: 60%;"></div>
+                </div>
+            </div>
+
+            <div class="project-actions">
+                <a href="tickets.html" class="btn-link">Voir les tickets</a>
+            </div>
+
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="project-card">
+
+            <div class="project-header">
+                <h2>Application interne</h2>
+                <span class="badge warning">À surveiller</span>
+            </div>
+
+            <p class="project-client">Client : <strong>Client B</strong></p>
+
+            <p class="project-collab">
+                Collaborateurs : Claire
+            </p>
+
+            <div class="hours">
+                <span>Heures restantes : 6h</span>
+                <div class="progress">
+                    <div class="progress-fill danger" style="width: 30%;"></div>
+                </div>
+            </div>
+
+            <div class="project-actions">
+                <a href="tickets.html" class="btn-link">Voir les tickets</a>
+            </div>
+
+        </div>
+        <!-- Projet 3 -->
+<div class="project-card">
+
+    <div class="project-header">
+        <h2>Plateforme e-commerce</h2>
+        <span class="badge active">Actif</span>
+    </div>
+
+    <p class="project-client">Client : <strong>Client C</strong></p>
+    <p class="project-collab">Collaborateurs : David, Emma</p>
+
+    <div class="hours">
+        <span>Heures restantes : 20h</span>
+        <div class="progress">
+            <div class="progress-fill" style="width: 75%;"></div>
+        </div>
+    </div>
+
+    <div class="project-actions">
+        <a href="tickets.html" class="btn-link">Voir les tickets</a>
+    </div>
+
+</div>
+
+<!-- Projet 4 -->
+<div class="project-card">
+
+    <div class="project-header">
+        <h2>Maintenance serveur</h2>
+        <span class="badge warning">À surveiller</span>
+    </div>
+
+    <p class="project-client">Client : <strong>Client D</strong></p>
+    <p class="project-collab">Collaborateurs : Lucas</p>
+
+    <div class="hours">
+        <span>Heures restantes : 4h</span>
+        <div class="progress">
+            <div class="progress-fill danger" style="width: 20%;"></div>
+        </div>
+    </div>
+
+    <div class="project-actions">
+        <a href="tickets.html" class="btn-link">Voir les tickets</a>
+    </div>
+
+</div>
+
+<!-- Projet 5 -->
+<div class="project-card">
+
+    <div class="project-header">
+        <h2>Refonte UX mobile</h2>
+        <span class="badge active">Actif</span>
+    </div>
+
+    <p class="project-client">Client : <strong>Client E</strong></p>
+    <p class="project-collab">Collaborateurs : Sarah, Tom</p>
+
+    <div class="hours">
+        <span>Heures restantes : 9h</span>
+        <div class="progress">
+            <div class="progress-fill" style="width: 45%;"></div>
+        </div>
+    </div>
+
+    <div class="project-actions">
+        <a href="tickets.html" class="btn-link">Voir les tickets</a>
+    </div>
+
+</div>
+
+<!-- Projet 6 -->
+<div class="project-card">
+
+    <div class="project-header">
+        <h2>API interne</h2>
+        <span class="badge active">Actif</span>
+    </div>
+
+    <p class="project-client">Client : <strong>Client F</strong></p>
+    <p class="project-collab">Collaborateurs : Kevin</p>
+
+    <div class="hours">
+        <span>Heures restantes : 14h</span>
+        <div class="progress">
+            <div class="progress-fill" style="width: 60%;"></div>
+        </div>
+    </div>
+
+    <div class="project-actions">
+        <a href="tickets.html" class="btn-link">Voir les tickets</a>
+    </div>
+
+</div>
+
+
+    </section>
+
+</main>
+
 
 </body>
 </html>
