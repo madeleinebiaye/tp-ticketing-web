@@ -24,6 +24,7 @@
             <a href="projects.html">Projets</a>
             <a href="tickets.html">Tickets</a>
             <a href="ticket-create.html">Créer un ticket</a>
+            <a href="project-create.html">Créer un projet</a>
             <a href="index.html">Déconnexion</a>
         </nav>
     </div>
@@ -32,8 +33,16 @@
     <!-- Contenu principal : liste des tickets -->
     <main class="tickets">
 <div class="tickets-header">
-    <h1 class="tickets-title">🎫 Gestion des tickets</h1>
+    <h1 class="tickets-title">Gestion des tickets</h1>
 </div>
+<div class="tickets-toolbar">
+    <input
+        type="search"
+        placeholder="Rechercher un ticket (titre, projet, statut...)"
+        class="tickets-search"
+    >
+</div>
+
         <table class="tickets-table">
             <thead>
                 <tr>

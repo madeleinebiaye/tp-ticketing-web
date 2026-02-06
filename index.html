@@ -26,6 +26,7 @@
             <a href="projects.html">Projets</a>
             <a href="tickets.html">Tickets</a>
             <a href="ticket-create.html">Créer un ticket</a>
+            <a href="project-create.html">Créer un projet</a>
             <a href="index.html">Déconnexion</a>
         </nav>
 
@@ -33,61 +34,106 @@
 </header>
 
 <!-- Contenu principal -->
+<!-- Contenu principal -->
 <main style="
     min-height: calc(100vh - 80px);
     display: flex;
-    justify-content: center;
-    align-items: center;
     margin-top: 80px;
 ">
 
-    <!-- Carte de connexion -->
-    <div style="
-        background-color: white;
-        padding: 2.5rem;
-        width: 100%;
-        max-width: 420px;
-        border-radius: 12px;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    <!-- PANNEAU BLEU GAUCHE -->
+    <section style="
+        flex: 1;
+        background: linear-gradient(135deg, #2c7be5, #2d7bd4);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3rem;
     ">
 
-        <h1 style="
-            text-align: center;
-            margin-bottom: 2rem;
-            color: #1e293b;
-        ">
-            Connexion
-        </h1>
-
-        <form>
-
-            <div class="form-group">
-                <label>Adresse email</label>
-                <input type="email" placeholder="exemple@email.com">
-            </div>
-
-            <div class="form-group">
-                <label>Mot de passe</label>
-                <input type="password" placeholder="Votre mot de passe">
-            </div>
-
-            <button style="
-                width: 100%;
-                margin-top: 1.5rem;
-                padding: 0.8rem;
-                background-color: #2c7be5;
-                color: white;
-                border: none;
-                border-radius: 8px;
-                font-size: 1rem;
-                cursor: pointer;
+        <div style="max-width: 420px;">
+            <h1 style="
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
             ">
-                Se connecter
-            </button>
+                Bienvenue 👋
+            </h1>
 
-        </form>
+            <p style="
+                font-size: 1.1rem;
+                line-height: 1.6;
+                opacity: 0.95;
+            ">
+                Accédez à votre espace de gestion des projets et tickets.
+                Suivez l’avancement, collaborez efficacement et gardez
+                une vision claire de vos activités.
+            </p>
+        </div>
 
-    </div>
+    </section>
+
+    <!-- ZONE CONNEXION DROITE -->
+    <section style="
+        flex: 1;
+        background-color: #eaf2ff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    ">
+
+        <!-- Carte de connexion -->
+        <div style="
+            background-color: white;
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+        ">
+
+            <h1 style="
+                text-align: center;
+                margin-bottom: 2rem;
+                color: #2c7be5;
+            ">
+                Connexion
+            </h1>
+
+            <form>
+
+                <div class="form-group">
+                    <label>Adresse email</label>
+                    <input type="email" placeholder="exemple@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label>Mot de passe</label>
+                    <input type="password" placeholder="Votre mot de passe">
+                </div>
+<div class="forgot-password">
+    <a href="#">Mot de passe oublié ?</a>
+</div>
+
+                <button style="
+                    width: 100%;
+                    margin-top: 1.5rem;
+                    padding: 0.8rem;
+                    background-color: #2c7be5;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    font-size: 1rem;
+                    cursor: pointer;
+                ">
+                    Se connecter
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
 
 </main>
 

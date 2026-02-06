@@ -25,6 +25,7 @@
             <a href="projects.html">Projets</a>
             <a href="tickets.html">Tickets</a>
             <a href="ticket-create.html">Créer un ticket</a>
+            <a href="project-create.html">Créer un projet</a>
             <a href="index.html">Déconnexion</a>
         </nav>
     </div>
@@ -37,7 +38,7 @@
         <!-- Formulaire de création -->
         <form class="ticket-form">
  <div class="tickets-header">
-    <h1 class="tickets-title">Créer un ticket </h1>
+    <h1 class="tickets-title">Créer un projet </h1>
 </div>
             <!-- Titre du ticket -->
             <div class="form-group">
@@ -63,19 +64,6 @@
                 ></textarea>
             </div>
 
-            <!-- Statut du ticket -->
-            <div class="form-group">
-                <label for="status">Statut</label>
-                <select id="status" name="status">
-                    <option>Nouveau</option>
-                    <option>En cours</option>
-                    <option>En attente client</option>
-                    <option>Terminé</option>
-                    <option>À valider</option>
-                    <option>Validé</option>
-                    <option>Refusé</option>
-                </select>
-            </div>
 
             <!-- Priorité (optionnelle) -->
             <div class="form-group">
@@ -87,38 +75,7 @@
                 </select>
             </div>
 
-            <!-- Type de ticket -->
-            <div class="form-group">
-                <label for="type">Type</label>
-                <select id="type" name="type">
-                    <option>Inclus</option>
-                    <option>Facturable</option>
-                </select>
-            </div>
-
-            <!-- Temps estimé (optionnel) -->
-            <div class="form-group">
-                <label for="estimated_time">Temps estimé (heures)</label>
-                <input
-                    type="number"
-                    id="estimated_time"
-                    name="estimated_time"
-                    placeholder="Ex : 2"
-                    min="0"
-                >
-            </div>
-
-            <!-- Temps réel passé -->
-            <div class="form-group">
-                <label for="spent_time">Temps réel passé (heures)</label>
-                <input
-                    type="number"
-                    id="spent_time"
-                    name="spent_time"
-                    placeholder="Ex : 2.5"
-                    min="0"
-                >
-            </div>
+          
 
             <!-- Collaborateurs assignés -->
             <div class="form-group">
@@ -135,7 +92,7 @@
             </div>
 
             <!-- Bouton de création -->
-            <button type="submit">Créer le ticket</button>
+            <button type="submit">Créer le projet</button>
 
         </form>
 <!-- Colonne droite : aide / information -->
@@ -143,22 +100,22 @@
 
             <!-- Image illustrative -->
             <img
-                src="assets/ticket-illustration.png"
-                alt="Illustration ticket"
+                src="assets/image de projet.jpg"
+                alt="Illustration projet"
             >
 
             <!-- Texte explicatif -->
-            <h2>À quoi sert un ticket ?</h2>
+            <h2>À quoi sert un projet  ?</h2>
 
             <p>
-                Un ticket permet de formaliser une demande client liée à un projet.
-                Il sert à suivre l’avancement du travail, mesurer le temps passé
-                et garantir une communication claire entre le client et les collaborateurs.
+                Un projet permet de structurer et organiser un ensemble de tâches liées à une demande client.
+                Il sert à définir les objectifs, les ressources nécessaires, les délais et les responsabilités.
+                Un projet facilite la coordination entre les collaborateurs et assure une traçabilité claire des actions.
             </p>
 
             <p>
-                Chaque ticket possède un cycle de vie précis :
-                création, traitement, validation et éventuellement facturation.
+                Chaque projet possède un cycle de vie précis :
+                création, traitement, validation et éventuellement facturation et est lie a des tickets .
             </p>
 
         </aside>
