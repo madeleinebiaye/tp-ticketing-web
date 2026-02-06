@@ -228,6 +228,87 @@ input {
 .form-group select[multiple] {
     height: 90px;
 }
+/* =========================
+   PAGE DÉTAIL DU TICKET
+========================= */
+
+.ticket-detail {
+    margin-top: 100px;
+    padding: 2rem;
+    background-color: #eaf2ff;
+    min-height: calc(100vh - 100px);
+}
+
+/* Titre principal */
+.ticket-detail h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    color: #1e293b;
+}
+
+/* Bloc infos générales */
+.ticket-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+.ticket-info p {
+    background-color: #f8fafc;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 0.95rem;
+}
+
+.ticket-info strong {
+    color: #2c7be5;
+}
+
+/* Sections (description / temps) */
+.ticket-description,
+.ticket-time {
+    background-color: white;
+    padding: 1.8rem;
+    border-radius: 14px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 2rem;
+}
+
+/* Titres des sections */
+.ticket-description h2,
+.ticket-time h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+    border-left: 4px solid #2c7be5;
+    padding-left: 0.6rem;
+}
+
+/* Texte description */
+.ticket-description p {
+    line-height: 1.6;
+    color: #334155;
+}
+
+/* Temps passé mis en valeur */
+.ticket-time p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e293b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ticket-detail {
+        padding: 1rem;
+    }
+}
 
 /* =========================
    BOUTON

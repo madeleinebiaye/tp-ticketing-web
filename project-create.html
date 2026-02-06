@@ -32,13 +32,13 @@
 </header>
 
     <!-- Contenu principal : création d’un ticket -->
-    <main class="ticket-create">
+   <main class="ticket-create">
 
  <div class="ticket-layout">
         <!-- Formulaire de création -->
         <form class="ticket-form">
  <div class="tickets-header">
-    <h1 class="tickets-title">Créer un projet </h1>
+    <h1 class="tickets-title">Créer un projet</h1>
 </div>
             <!-- Titre du ticket -->
             <div class="form-group">
@@ -64,6 +64,19 @@
                 ></textarea>
             </div>
 
+            <!-- Statut du ticket -->
+            <div class="form-group">
+                <label for="status">Statut</label>
+                <select id="status" name="status">
+                    <option>Nouveau</option>
+                    <option>En cours</option>
+                    <option>En attente client</option>
+                    <option>Terminé</option>
+                    <option>À valider</option>
+                    <option>Validé</option>
+                    <option>Refusé</option>
+                </select>
+            </div>
 
             <!-- Priorité (optionnelle) -->
             <div class="form-group">
@@ -75,19 +88,54 @@
                 </select>
             </div>
 
-          
+            <!-- Type de ticket -->
+            <div class="form-group">
+                <label for="type">Type</label>
+                <select id="type" name="type">
+                    <option>Inclus</option>
+                    <option>Facturable</option>
+                </select>
+            </div>
+
+            <!-- Temps estimé (optionnel) -->
+            <div class="form-group">
+                <label for="estimated_time">Temps estimé (heures)</label>
+                <input
+                    type="number"
+                    id="estimated_time"
+                    name="estimated_time"
+                    placeholder="Ex : 2"
+                    min="0"
+                >
+            </div>
+
+            <!-- Temps réel passé -->
+            <div class="form-group">
+                <label for="spent_time">Temps réel passé (heures)</label>
+                <input
+                    type="number"
+                    id="spent_time"
+                    name="spent_time"
+                    placeholder="Ex : 2.5"
+                    min="0"
+                >
+            </div>
 
             <!-- Collaborateurs assignés -->
             <div class="form-group">
                 <label for="collaborators">Collaborateur(s)</label>
                 <select id="collaborators" name="collaborators" multiple>
                      <option>Madeleine Biaye</option>
-                    <option>Jean Dupont</option>
-                    <option>Marie Martin</option>
-                    <option>Paul Durand</option>
-                    <option>Pierre Bernard</option>
-                    <option>Lucie Dubois</option>
-                    <option>Thomas Leroy</option>
+                    <option>Mouhamed Ndaw</option>
+                     <option>Oumar Diop</option>
+                     <option>Adama Diouf</option>
+                     <option>Fatou Ndiaye</option>
+                     <option>Amadou Fall</option>
+                     <option>Cheikh Gueye</option>
+                    <option>Diago Tall</option>
+                    <option>ELHADJI Sall </option>
+                    <option>Koulou </option>
+                    <option>Binta DIaw</option>
                 </select>
             </div>
 
@@ -105,23 +153,22 @@
             >
 
             <!-- Texte explicatif -->
-            <h2>À quoi sert un projet  ?</h2>
+            <h2>À quoi sert un projet ?</h2>
 
             <p>
-                Un projet permet de structurer et organiser un ensemble de tâches liées à une demande client.
-                Il sert à définir les objectifs, les ressources nécessaires, les délais et les responsabilités.
-                Un projet facilite la coordination entre les collaborateurs et assure une traçabilité claire des actions.
+                Un projet    permet de formaliser une demande client liée à un projet.
+                Il sert à suivre l’avancement du travail, mesurer le temps passé
+                et garantir une communication claire entre le client et les collaborateurs.
             </p>
 
             <p>
                 Chaque projet possède un cycle de vie précis :
-                création, traitement, validation et éventuellement facturation et est lie a des tickets .
+                création, traitement, validation et éventuellement facturation.
             </p>
 
         </aside>
     </div>
 
     </main>
-
 </body>
 </html>
