@@ -707,3 +707,45 @@ input {
     color: #2c7be5;
     font-weight: 500;
 }
+#form-message {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    display: none;
+}
+
+#form-message.error {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+#form-message.success {
+    background-color: #dcfce7;
+    color: #166534;
+}
+
+#form-message.info {
+    background-color: #e0f2fe;
+    color: #075985;
+}
+@media (max-width: 768px) {
+    .ticket-layout {
+        flex-direction: column;
+    }
+
+    .ticket-form,
+    .ticket-info-box {
+        max-width: 100%;
+    }
+}
+/* Champ invalide */
+.input-error {
+    border: 2px solid #dc2626;
+    background-color: #fee2e2;
+}
+
+/* Champ valide */
+.input-success {
+    border: 2px solid #16a34a;
+}
