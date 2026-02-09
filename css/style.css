@@ -749,3 +749,68 @@ input {
 .input-success {
     border: 2px solid #16a34a;
 }
+
+
+
+/* Profil menu */
+.profile-menu {
+    position: relative;
+}
+
+/* Avatar */
+.profile-avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/* Menu déroulant */
+.profile-dropdown {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 220px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    padding: 0.8rem;
+    display: none;
+    z-index: 2000;
+}
+
+/* Infos utilisateur */
+.profile-info {
+    margin-bottom: 0.6rem;
+}
+
+.profile-info span {
+    font-size: 0.8rem;
+    color: #64748b;
+}
+
+/* Liens */
+.profile-dropdown a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #1e293b;
+    border-radius: 6px;
+    font-size: 0.9rem;
+}
+
+.profile-dropdown a:hover {
+    background-color: #f1f5f9;
+}
+
+.profile-dropdown .logout {
+    color: #dc2626;
+}
+
+/* Séparateur */
+.profile-dropdown hr {
+    border: none;
+    border-top: 1px solid #e5e7eb;
+    margin: 0.4rem 0;
+}

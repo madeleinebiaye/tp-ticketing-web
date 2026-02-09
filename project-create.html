@@ -34,13 +34,13 @@
 </header>
 
     <!-- Contenu principal : création d’un ticket -->
-   <main class="ticket-create">
+    <main class="ticket-create">
 
  <div class="ticket-layout">
         <!-- Formulaire de création -->
-        <form class="ticket-form">
+        <form class="ticket-form" id="ticketForm">
  <div class="tickets-header">
-    <h1 class="tickets-title">Créer un projet</h1>
+    <h1 class="tickets-title">Créer un Projet </h1>
 </div>
             <!-- Titre du ticket -->
             <div class="form-group">
@@ -90,14 +90,17 @@
                 </select>
             </div>
 
-            <!-- Type de ticket -->
-            <div class="form-group">
-                <label for="type">Type</label>
-                <select id="type" name="type">
-                    <option>Inclus</option>
-                    <option>Facturable</option>
-                </select>
-            </div>
+           <div class="form-group">
+    <label for="type">Type</label>
+
+    <select id="type" name="type">
+        <option>Inclus</option>
+        <option>Facturable</option>
+    </select>
+
+    <p id="ticket-type-info"></p>
+</div>
+
 
             <!-- Temps estimé (optionnel) -->
             <div class="form-group">
@@ -128,21 +131,20 @@
                 <label for="collaborators">Collaborateur(s)</label>
                 <select id="collaborators" name="collaborators" multiple>
                      <option>Madeleine Biaye</option>
-                    <option>Mouhamed Ndaw</option>
-                     <option>Oumar Diop</option>
-                     <option>Adama Diouf</option>
-                     <option>Fatou Ndiaye</option>
-                     <option>Amadou Fall</option>
-                     <option>Cheikh Gueye</option>
-                    <option>Diago Tall</option>
-                    <option>ELHADJI Sall </option>
-                    <option>Koulou </option>
-                    <option>Binta DIaw</option>
+                    <option>Jean Dupont</option>
+                    <option>Marie Martin</option>
+                    <option>Paul Durand</option>
+                    <option>Pierre Bernard</option>
+                    <option>Lucie Dubois</option>
+                    <option>Thomas Leroy</option>
                 </select>
             </div>
 
             <!-- Bouton de création -->
+             <p id="formMessage"></p>
             <button type="submit">Créer le projet</button>
+            <div id="form-message"></div>
+
 
         </form>
 <!-- Colonne droite : aide / information -->
@@ -151,14 +153,14 @@
             <!-- Image illustrative -->
             <img
                 src="assets/image de projet.jpg"
-                alt="Illustration projet"
+                alt="Illustration ticket"
             >
 
             <!-- Texte explicatif -->
             <h2>À quoi sert un projet ?</h2>
 
             <p>
-                Un projet    permet de formaliser une demande client liée à un projet.
+                Un projet permet de formaliser une demande client liée à un projet.
                 Il sert à suivre l’avancement du travail, mesurer le temps passé
                 et garantir une communication claire entre le client et les collaborateurs.
             </p>
@@ -172,5 +174,7 @@
     </div>
 
     </main>
+<script src="js/ticket.js"></script>
+
 </body>
 </html>
